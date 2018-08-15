@@ -1,0 +1,128 @@
+body {
+  font-family: ReithSans, ReithSerif, sans-serif !important;
+  color: #fff;
+}
+
+.trending-topics_title {
+  color: #7a7a7a;
+  font-size: 35px;
+}
+
+hr {
+  display: inline-block;
+  border: 1px solid #7a7a7a;
+  width: 50%;
+  vertical-align: middle;
+}
+
+@media (max-width: 550px) {
+  hr {
+    width: 20%;
+  }
+}
+
+.trending-topics {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  margin: 20px 0;
+}
+
+.trending-topic {
+  width: 300px;
+  height: 350px;
+  background-color: black;
+  background: linear-gradient(180deg, rgba(0,0,0,0.2), rgba(0,0,0,0.6));
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.topic-stories_container {
+  width: 300px;
+  height: 330px;
+  background-color: #ededed;
+  border-radius: 10px;
+  margin-right: 15px;
+  display: none;
+  vertical-align: top;
+  padding: 10px;
+  overflow: scroll;
+}
+
+.topic-story a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.topic-story a:hover {
+  color: #1167A8;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 290px;
+}
+
+li {
+  max-width: 300px;
+  white-space: normal;
+  padding: 0 15px 10px 0;
+  overflow: auto;
+}
+
+.topic-background {
+  object-fit: cover;
+  object-position: 50% 0%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  opacity: 0.5;
+  border-radius: 10px;
+}
+
+.topic-background:hover {
+  opacity: 0.8;
+}
+
+.topic-name {
+  font-size: 25px;
+  text-shadow: 1px 1px 5px #000;
+  width: 300px;
+  white-space: normal;
+}
+
+.topic-name_text {
+  width: 250px;
+}
+
+.topic-story_count {
+  font-size: 15px;
+}
+
+.topic-timestamp {
+  font-size: 10px;
+  padding-top: 5px;
+}
+
+.trending-topic hr {
+  border: 1px solid #b80000;
+  width: 35px;
+}
+
+.topic-info {
+  position: absolute;
+  bottom: 0;
+  padding: 15px;
+}
+
+.topic-story {
+  white-space: normal;
+  padding: 5px 0;
+}
